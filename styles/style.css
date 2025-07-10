@@ -1,0 +1,104 @@
+/*---------------------------------------/*
+ # SETTINGS
+/*---------------------------------------*/
+/*---------------------------------------/*
+ # GENERIC - BOOTSTRAP
+/*---------------------------------------*/
+.navbar-collapse {
+  flex-grow: initial !important;
+}
+
+/*---------------------------------------/*
+ # ELEMENTS
+/*---------------------------------------*/
+body {
+  background-color: #fefefe !important;
+}
+
+/*---------------------------------------/*
+ # OBJECTS
+/*---------------------------------------*/
+/*---------------------------------------/*
+ # COMPONENTS
+/*---------------------------------------*/
+.c-nav {
+  border-bottom: solid 3px #1400ff;
+}
+.c-nav__logo {
+  text-decoration: none;
+  color: #1400ff;
+  font-size: 25px;
+}
+.c-nav__link {
+  color: #1400ff !important;
+  font-size: 25px !important;
+  display: inline-block;
+  border-bottom: solid 3px transparent !important;
+  transition: border-bottom-color 0.3s ease-in-out !important;
+  text-decoration: none !important;
+  margin-bottom: 0;
+  padding-bottom: 0.2rem !important;
+}
+.c-nav__link:hover {
+  border-bottom-color: #1400ff !important;
+  text-decoration: none !important;
+}
+
+.c-header {
+  position: relative;
+  height: -moz-max-content;
+  height: max-content;
+  border-bottom: solid 3px #1400ff;
+  margin-bottom: solid 3px #1400ff;
+}
+.c-header__img {
+  width: 500px;
+  height: auto;
+  border-radius: 65px;
+  margin-top: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: 2rem;
+  z-index: 0;
+}
+.c-header__titel {
+  font-size: 500px;
+  color: #1400ff;
+  position: relative;
+  z-index: 1;
+  margin-top: -30rem;
+}
+
+.c-main {
+  position: relative;
+  text-align: right;
+  margin-right: 2rem;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
+}
+.c-main__text {
+  font-size: 70px;
+  color: #1400ff;
+}
+
+.c-footer {
+  background-color: #1400ff;
+  padding: 2rem 1rem;
+}
+.c-footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.c-footer__logo {
+  width: 100px;
+  height: auto;
+}
+.c-footer__email {
+  margin: 0;
+  color: #fefefe;
+}
+
+/*---------------------------------------/*
+ # UTILITIES
+/*---------------------------------------*/

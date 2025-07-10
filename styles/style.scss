@@ -1,0 +1,112 @@
+/*---------------------------------------/*
+ # SETTINGS
+/*---------------------------------------*/
+
+$main-color: #1400ff;
+$secondary-color: #fefefe;
+
+$font-size1: 25px;
+$expressive-heading: 500px;
+$font-size2: 70px;
+
+$random-text: 30px;
+$normal-text: 20px;
+$titels: 60px;
+/*---------------------------------------/*
+ # GENERIC - BOOTSTRAP
+/*---------------------------------------*/
+.navbar-collapse {
+  flex-grow: initial !important;
+}
+/*---------------------------------------/*
+ # ELEMENTS
+/*---------------------------------------*/
+body {
+  background-color: $secondary-color !important;
+}
+/*---------------------------------------/*
+ # OBJECTS
+/*---------------------------------------*/
+
+/*---------------------------------------/*
+ # COMPONENTS
+/*---------------------------------------*/
+.c-nav {
+  &__logo {
+    text-decoration: none;
+    color: $main-color;
+    font-size: $font-size1;
+  }
+  &__link {
+    color: $main-color !important;
+    font-size: $font-size1 !important;
+    display: inline-block;
+    border-bottom: solid 3px transparent !important;
+    transition: border-bottom-color 0.3s ease-in-out !important;
+    text-decoration: none !important;
+    margin-bottom: 0;
+    padding-bottom: 0.2rem !important;
+    &:hover {
+      border-bottom-color: $main-color !important;
+      text-decoration: none !important;
+    }
+  }
+  border-bottom: solid 3px $main-color;
+}
+
+.c-header {
+  position: relative;
+  height: max-content;
+  border-bottom: solid 3px $main-color;
+  &__img {
+    width: 500px;
+    height: auto;
+    border-radius: 65px;
+    margin-top: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: 2rem;
+    z-index: 0;
+  }
+  &__titel {
+    font-size: $expressive-heading;
+    color: $main-color;
+    position: relative;
+    z-index: 1;
+    margin-top: -30rem;
+  }
+  margin-bottom: solid 3px $main-color;
+}
+
+.c-main {
+  position: relative;
+  text-align: right;
+  margin-right: 2rem;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
+  &__text {
+    font-size: $font-size2;
+    color: $main-color;
+  }
+}
+
+.c-footer {
+  background-color: $main-color;
+  padding: 2rem 1rem;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    width: 100px;
+    height: auto;
+  }
+  &__email {
+    margin: 0;
+    color: $secondary-color;
+  }
+}
+/*---------------------------------------/*
+ # UTILITIES
+/*---------------------------------------*/
