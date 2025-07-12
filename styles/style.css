@@ -15,6 +15,13 @@ body {
   background-color: #fefefe !important;
 }
 
+.c-portfoliohtml,
+.c-portfoliobody {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 /*---------------------------------------/*
  # OBJECTS
 /*---------------------------------------*/
@@ -41,6 +48,29 @@ body {
 }
 .c-nav__link:hover {
   border-bottom-color: #1400ff !important;
+  text-decoration: none !important;
+}
+
+.c-nav2 {
+  border-bottom: solid 3px #fefefe;
+}
+.c-nav2__logo {
+  text-decoration: none;
+  color: #fefefe;
+  font-size: 25px;
+}
+.c-nav2__link {
+  color: #fefefe !important;
+  font-size: 25px !important;
+  display: inline-block;
+  border-bottom: solid 3px transparent !important;
+  transition: border-bottom-color 0.3s ease-in-out !important;
+  text-decoration: none !important;
+  margin-bottom: 0;
+  padding-bottom: 0.2rem !important;
+}
+.c-nav2__link:hover {
+  border-bottom-color: #fefefe !important;
   text-decoration: none !important;
 }
 
@@ -97,6 +127,40 @@ body {
 .c-footer__email {
   margin: 0;
   color: #fefefe;
+}
+
+.c-footer2 {
+  border-top: solid 3px #fefefe;
+  margin-top: 2rem;
+}
+
+.c-portfolio {
+  margin-top: 4rem;
+}
+.c-portfolio__cardimg {
+  width: 100%;
+  height: auto;
+}
+.c-portfolio__card--2 {
+  margin-top: 10rem !important;
+}
+.c-portfolio__row {
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 80vh;
+  width: 100%;
+}
+
+.c-portfoliobody {
+  background-color: #1400ff !important;
+  background-image: url("../imgs/portfolio/workworkworkwork.png");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.c-portfoliobody p {
+  color: #fefefe;
+  font-size: 30px;
 }
 
 /*---------------------------------------/*

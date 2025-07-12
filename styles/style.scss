@@ -24,6 +24,13 @@ $titels: 60px;
 body {
   background-color: $secondary-color !important;
 }
+
+.c-portfoliohtml,
+.c-portfoliobody {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 /*---------------------------------------/*
  # OBJECTS
 /*---------------------------------------*/
@@ -52,6 +59,28 @@ body {
     }
   }
   border-bottom: solid 3px $main-color;
+}
+.c-nav2 {
+  &__logo {
+    text-decoration: none;
+    color: $secondary-color;
+    font-size: $font-size1;
+  }
+  &__link {
+    color: $secondary-color !important;
+    font-size: $font-size1 !important;
+    display: inline-block;
+    border-bottom: solid 3px transparent !important;
+    transition: border-bottom-color 0.3s ease-in-out !important;
+    text-decoration: none !important;
+    margin-bottom: 0;
+    padding-bottom: 0.2rem !important;
+    &:hover {
+      border-bottom-color: $secondary-color !important;
+      text-decoration: none !important;
+    }
+  }
+  border-bottom: solid 3px $secondary-color;
 }
 
 .c-header {
@@ -105,6 +134,43 @@ body {
   &__email {
     margin: 0;
     color: $secondary-color;
+  }
+}
+
+.c-footer2 {
+  border-top: solid 3px $secondary-color;
+  margin-top: 2rem;
+  // display: none;
+}
+
+.c-portfolio {
+  margin-top: 4rem;
+  &__cardimg {
+    width: 100%;
+    height: auto;
+  }
+  &__card {
+    &--2 {
+      margin-top: 10rem !important;
+    }
+  }
+  &__row {
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 80vh;
+    width: 100%;
+  }
+}
+
+.c-portfoliobody {
+  background-color: $main-color !important;
+  background-image: url('../imgs/portfolio/workworkworkwork.png');
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  p {
+    color: $secondary-color;
+    font-size: $random-text;
   }
 }
 /*---------------------------------------/*
