@@ -39,6 +39,10 @@ body {
  # COMPONENTS
 /*---------------------------------------*/
 .c-nav {
+  position: sticky !important;
+  background-color: $secondary-color !important;
+  top: 0;
+  z-index: 1000;
   &__logo {
     text-decoration: none;
     color: $main-color;
@@ -57,10 +61,17 @@ body {
       border-bottom-color: $main-color !important;
       text-decoration: none !important;
     }
+    &--active {
+      border-bottom: solid 3px $main-color !important;
+    }
   }
   border-bottom: solid 3px $main-color;
 }
 .c-nav2 {
+  position: sticky !important;
+  background-color: $main-color !important;
+  top: 0;
+  z-index: 1000;
   &__logo {
     text-decoration: none;
     color: $secondary-color;
@@ -78,6 +89,9 @@ body {
     &:hover {
       border-bottom-color: $secondary-color !important;
       text-decoration: none !important;
+    }
+    &--active {
+      border-bottom: solid 3px $secondary-color !important;
     }
   }
   border-bottom: solid 3px $secondary-color;
@@ -159,6 +173,17 @@ body {
     overflow-y: auto;
     max-height: 80vh;
     width: 100%;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  &__cardtext {
+    color: $secondary-color;
+    font-size: $random-text;
+    text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.8);
   }
 }
 
@@ -171,6 +196,47 @@ body {
   p {
     color: $secondary-color;
     font-size: $random-text;
+  }
+}
+
+.c-about {
+  position: relative;
+  &__img {
+    width: 100%;
+    height: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    position: sticky;
+    top: 8rem;
+  }
+  &__text {
+    font-size: $random-text;
+    color: $main-color;
+    margin-top: 4rem;
+  }
+  &__texts {
+    // overflow-x: auto;
+    // overflow-y: auto;
+    // max-height: 80vh;
+    // width: 100%;
+    // &::-webkit-scrollbar {
+    //   display: none;
+    // }
+    // -ms-overflow-style: none;
+    // scrollbar-width: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $main-color;
+    font-size: $normal-text;
+    display: inline-block;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom-color 0.3s ease-in-out;
+    &:hover {
+      border-bottom-color: $main-color;
+      text-decoration: none;
+    }
   }
 }
 /*---------------------------------------/*

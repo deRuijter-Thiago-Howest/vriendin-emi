@@ -29,6 +29,10 @@ body {
  # COMPONENTS
 /*---------------------------------------*/
 .c-nav {
+  position: sticky !important;
+  background-color: #fefefe !important;
+  top: 0;
+  z-index: 1000;
   border-bottom: solid 3px #1400ff;
 }
 .c-nav__logo {
@@ -50,8 +54,15 @@ body {
   border-bottom-color: #1400ff !important;
   text-decoration: none !important;
 }
+.c-nav__link--active {
+  border-bottom: solid 3px #1400ff !important;
+}
 
 .c-nav2 {
+  position: sticky !important;
+  background-color: #1400ff !important;
+  top: 0;
+  z-index: 1000;
   border-bottom: solid 3px #fefefe;
 }
 .c-nav2__logo {
@@ -72,6 +83,9 @@ body {
 .c-nav2__link:hover {
   border-bottom-color: #fefefe !important;
   text-decoration: none !important;
+}
+.c-nav2__link--active {
+  border-bottom: solid 3px #fefefe !important;
 }
 
 .c-header {
@@ -149,6 +163,16 @@ body {
   overflow-y: auto;
   max-height: 80vh;
   width: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.c-portfolio__row::-webkit-scrollbar {
+  display: none;
+}
+.c-portfolio__cardtext {
+  color: #fefefe;
+  font-size: 30px;
+  text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.8);
 }
 
 .c-portfoliobody {
@@ -161,6 +185,35 @@ body {
 .c-portfoliobody p {
   color: #fefefe;
   font-size: 30px;
+}
+
+.c-about {
+  position: relative;
+}
+.c-about__img {
+  width: 100%;
+  height: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  position: sticky;
+  top: 8rem;
+}
+.c-about__text {
+  font-size: 30px;
+  color: #1400ff;
+  margin-top: 4rem;
+}
+.c-about__link {
+  text-decoration: none;
+  color: #1400ff;
+  font-size: 20px;
+  display: inline-block;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+.c-about__link:hover {
+  border-bottom-color: #1400ff;
+  text-decoration: none;
 }
 
 /*---------------------------------------/*
