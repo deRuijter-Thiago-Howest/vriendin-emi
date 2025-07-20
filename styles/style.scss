@@ -214,17 +214,6 @@ body {
     color: $main-color;
     margin-top: 4rem;
   }
-  &__texts {
-    // overflow-x: auto;
-    // overflow-y: auto;
-    // max-height: 80vh;
-    // width: 100%;
-    // &::-webkit-scrollbar {
-    //   display: none;
-    // }
-    // -ms-overflow-style: none;
-    // scrollbar-width: none;
-  }
 
   &__link {
     text-decoration: none;
@@ -236,6 +225,58 @@ body {
     &:hover {
       border-bottom-color: $main-color;
       text-decoration: none;
+    }
+  }
+}
+.c-detail {
+  position: relative;
+  &__row {
+    position: relative;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  &__titel {
+    font-size: $titels;
+    color: $main-color;
+    margin-bottom: 2rem;
+  }
+  &__texts {
+    margin-top: 4rem !important;
+    margin-bottom: 2rem;
+    position: sticky;
+    top: 6rem;
+  }
+  &__text {
+    font-size: 16px;
+    color: $main-color;
+  }
+  &__vid {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+      outline: none;
+      border-radius: 20px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    }
+  }
+  &__list {
+    list-style-type: none;
+    &::before {
+      content: '-';
+      color: $main-color;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
     }
   }
 }

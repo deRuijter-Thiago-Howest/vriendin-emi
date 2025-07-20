@@ -216,6 +216,59 @@ body {
   text-decoration: none;
 }
 
+.c-detail {
+  position: relative;
+}
+.c-detail__row {
+  position: relative;
+}
+.c-detail__img {
+  width: 100%;
+  height: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.c-detail__titel {
+  font-size: 60px;
+  color: #1400ff;
+  margin-bottom: 2rem;
+}
+.c-detail__texts {
+  margin-top: 4rem !important;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 6rem;
+}
+.c-detail__text {
+  font-size: 16px;
+  color: #1400ff;
+}
+.c-detail__vid {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.c-detail__vid video {
+  width: 100%;
+  height: auto;
+  display: block;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+.c-detail__list {
+  list-style-type: none;
+}
+.c-detail__list::before {
+  content: "-";
+  color: #1400ff;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
