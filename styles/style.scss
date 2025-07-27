@@ -18,6 +18,17 @@ $titels: 60px;
 .navbar-collapse {
   flex-grow: initial !important;
 }
+
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(20,0,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  .navbar-toggler-icon-2 {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+  }
+}
 /*---------------------------------------/*
  # ELEMENTS
 /*---------------------------------------*/
@@ -125,6 +136,12 @@ li {
     @media (max-width: 1600px) {
       width: 400px;
     }
+    @media (max-width: 1250px) {
+      width: 300px;
+    }
+    @media (max-width: 992px) {
+      width: 200px;
+    }
   }
   &__titel {
     font-size: $expressive-heading;
@@ -134,6 +151,18 @@ li {
     margin-top: -30rem;
     @media (max-width: 1600px) {
       font-size: 400px;
+    }
+    @media (max-width: 1250px) {
+      font-size: 200px;
+      margin-top: -15rem;
+    }
+    @media (max-width: 992px) {
+      font-size: 150px;
+      margin-top: -10rem;
+    }
+    @media (max-width: 480px) {
+      font-size: 100px;
+      margin-top: -5rem;
     }
   }
   margin-bottom: solid 3px $main-color;
@@ -145,9 +174,20 @@ li {
   margin-right: 2rem;
   margin-top: 20rem;
   margin-bottom: 20rem;
+  @media (max-width: 768px) {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
   &__text {
     font-size: $font-size2;
     color: $main-color;
+    @media (max-width: 1250px) {
+      font-size: 50px;
+    }
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
   }
 }
 
@@ -166,6 +206,11 @@ li {
   &__email {
     margin: 0;
     color: $secondary-color;
+    word-break: break-all;
+    margin-right: 1rem;
+    @media (max-width: 768px) {
+      width: 50%;
+    }
   }
 }
 
@@ -177,9 +222,18 @@ li {
 
 .c-portfolio {
   margin-top: 4rem;
+  &__resp {
+    margin-top: 10rem !important;
+  }
+
   &__cardimg {
     width: 100%;
     height: auto;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 0.7rem;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
   &__card {
     &--2 {
@@ -231,6 +285,9 @@ li {
     font-size: $random-text;
     color: $main-color;
     margin-top: 4rem;
+    @media (max-width: 992px) {
+      font-size: $random-text - 5px;
+    }
   }
 
   &__link {
@@ -240,6 +297,7 @@ li {
     display: inline-block;
     border-bottom: 3px solid transparent;
     transition: border-bottom-color 0.3s ease-in-out;
+    word-break: break-word;
     &:hover {
       border-bottom-color: $main-color;
       text-decoration: none;
@@ -261,6 +319,9 @@ li {
     font-size: $titels;
     color: $main-color;
     margin-bottom: 2rem;
+    @media (max-width: 992px) {
+      font-size: $titels - 20px;
+    }
   }
   &__texts {
     margin-top: 4rem !important;
